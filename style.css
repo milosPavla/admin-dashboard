@@ -1,0 +1,169 @@
+body, html {
+    box-sizing: border-box;
+    background-color: #010f21;
+}
+
+* {
+    margin: 0;
+    color: #d4f7fe;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+
+    width: 100%;
+    height: 150vh;
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+
+    border: 1px solid black;
+    background-color: #1c293a;
+    margin: 15px 25px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2;
+    gap: 15px;
+}
+
+.header > * {
+    display: flex;
+}
+
+.header .search-container input {
+    width: 90%;
+    height: 20px;
+    background-color: #0b1c31;
+    border-radius: 10px;
+    border: 0;
+}
+
+.header .mini-profile {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .mini-profile img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header .user-section {
+    align-items: center;
+    gap: 15px;
+}
+
+.header .user-section img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header .user-section span {
+    font-size: 11px;
+}
+
+.header .controls-section {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .controls-section button {
+    background-color: #152c49;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+}
+
+.side-bar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    
+    background-color: #1c293a;
+    text-align: left;
+
+    display: grid;
+    grid-template-rows: 70px 250px 250px;
+}
+
+.side-bar > * {
+    padding: 15px 40px;
+}
+
+.side-bar .side-header {
+    grid-row: 1;
+}
+
+.side-bar .links1 {
+    grid-row: 2;
+}
+
+.side-bar .links2 { 
+    grid-row: 3;
+}
+
+.side-bar a {
+    display: block;
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+.section {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin: 15px 25px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1;
+    gap: 25px;
+}
+
+.section .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25px repeat(3, 1fr);
+    gap: 25px;
+}
+
+.section .projects h2 {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    padding: 0;
+}
+
+.section .projects .project {
+    background-color: #1c293a;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.section .side-section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.section .side-section div {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.section .side-section .content {
+    background-color: #1c293a;
+    border-radius: 10px;
+    padding: 15px;
+}
+
