@@ -42,6 +42,11 @@ body, html {
     cursor: pointer;
 }
 
+.header img:hover,button:hover {
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
 .header .search-container {
     align-items: center;
     justify-content: center;
@@ -147,6 +152,12 @@ body, html {
     text-decoration: none;
 }
 
+.side-bar a:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+    padding-left: 10px;
+}
+
 .section {
     grid-column: 2;
     grid-row: 2;
@@ -173,9 +184,41 @@ body, html {
 }
 
 .section .projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #1c293a;
+    border-left: 4px solid #63758b;
     border-radius: 10px;
-    padding: 25px;
+    padding: 35px;
+}
+
+.section .projects .project:hover {
+    transition: 0.5s;
+    background-color: #2f3c4d;
+    border-left: 12px solid #63758b;
+}
+
+.section .projects .project .text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.section .projects .project .controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section .projects .project .controls img {
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.section .projects .project .controls img:hover {
+    transition: 0.5s;
+    opacity: 0.4;
 }
 
 .section .side-section {
@@ -189,9 +232,39 @@ body, html {
     grid-template-rows: 50px 1fr;
 }
 
-.section .side-section .content {
+.section .side-section .content-box {
     background-color: #1c293a;
     border-radius: 10px;
-    padding: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
+
+.section .side-section .announcements .content-box .content h4 {
+    cursor: pointer;
+}
+
+.section .side-section .announcements .content-box .content p {
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+}
+
+.section .side-section .trending .content-box .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section .side-section .trending .content-box .content img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.section .side-section .trending .content-box .content p span {
+    font-weight: 800;
+}
+
 
